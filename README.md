@@ -1,7 +1,7 @@
 # Trabajo_CA
  Trabajo Final curso Complejidad Algoritmica
  
- #Integrantes
+ ## Integrantes
 
 -Victor Andres Orihuela Schanks, U20171D891
 
