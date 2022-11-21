@@ -15,14 +15,14 @@ class algorithm:
         print(x)
         return marker.nearest_node
 
-    def handle_change_location(self, marker1, marker2):
+    def set_camino(self, marker1, marker2):
         shortest_path = nx.dijkstra_path(self.graph_edit, marker1, marker2, weight='length')  
         shortest_path_points = self.nodes.loc[shortest_path]
         return shortest_path_points
 
     def leer_archivo(self, path):
-        path.to_csv('ruta.csv', index=False)
-        df = pd.read_csv('ruta.csv')
+        path.to_csv('data\\ruta.csv', index=False)
+        df = pd.read_csv('data\\ruta.csv')
         y = list(df["y"])
         x = list(df["x"])
         return y , x

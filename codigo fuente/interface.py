@@ -111,7 +111,7 @@ class App(customtkinter.CTk):
             marker1 = self.algoritmo.set_nearest_node(self.marker_list[0] ,self.coordy[0], self.coordx[0])
             marker2 = self.algoritmo.set_nearest_node(self.marker_list[1], self.coordy[1], self.coordx[1])
 
-            path = self.algoritmo.handle_change_location(marker1 , marker2)
+            path = self.algoritmo.set_camino(marker1 , marker2)
             y , x = self.algoritmo.leer_archivo(path)
             coordenadas = [i for i in zip(y, x)]
             self.camino = self.map_widget.set_path(coordenadas)
